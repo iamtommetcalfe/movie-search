@@ -1,0 +1,16 @@
+import axios from 'axios'
+import type {App} from 'vue'
+
+interface AxiosOptions {
+    baseUrl?: string
+    apiKey?: string
+}
+
+export default {
+    install: (app: App, options: AxiosOptions) => {
+        app.config.globalProperties.$axios = axios.create({
+            baseURL: options.baseUrl,
+            params : { apiKey : options.apiKey }
+        })
+    }
+}
