@@ -7,6 +7,6 @@ import { vue3Debounce } from 'vue-debounce'
 const app = createApp(App)
 app.use(axios, {
     baseUrl: 'https://www.omdbapi.com/',
-    apiKey: 'YOUR_API_KEY_HERE'
+    apiKey: import.meta.env.VITE_OMDB_API_KEY
 }).directive('debounce', vue3Debounce({ lock: true }))
 app.mount('#app')
