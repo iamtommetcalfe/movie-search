@@ -4,6 +4,8 @@
 A simple Vue 3 application that uses 
 the [OMDB API](https://www.omdbapi.com/) to display search results.
 
+![Movie Search screenshot](src/assets/images/movie-search-example.png)
+
 ## Prerequisites
 - Head over to [OMDB and request an API key](https://www.omdbapi.com/apikey.aspx)
 - Create .env file in your root directory
