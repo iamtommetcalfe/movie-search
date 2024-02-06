@@ -9,7 +9,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import {AxiosError, AxiosInstance } from 'axios'
-import { vue3Debounce } from 'vue-debounce'
+import { vueDebounce } from 'vue-debounce'
 import Items from "./search/Items.vue";
 import Error from "./search/Error.vue";
 import Loader from "./search/Loader.vue";
@@ -38,7 +38,7 @@ export default defineComponent({
     };
   },
   directives: {
-    debounce: vue3Debounce({ lock: true })
+    debounce: vueDebounce({ lock: true })
   },
   methods: {
     async search(searchTerm: string) {
